@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — Honki Planner</title>
+  <meta name="robots" content="index, follow">
+  <style>
+    :root {
+      --bg: #F7F5F1;
+      --card: #ffffff;
+      --text-primary: #2C2723;
+      --text-secondary: #5C5651;
+      --text-muted: #8A8580;
+      --accent: #6E6761;
+      --border: #E5E0D8;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    header .app-name {
+      font-size: 18px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    header .updated {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      color: var(--text-primary);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 24px 0 8px;
+      color: var(--text-primary);
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin: 0 0 12px;
+    }
+    ul {
+      padding-left: 22px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    .toc {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .toc h2 {
+      margin-top: 0;
+      font-size: 16px;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 22px;
+    }
+    .toc li {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .toc a {
+      color: var(--text-secondary);
+    }
+    .highlight {
+      background: #FFF8E1;
+      border-left: 4px solid #D4B95F;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+    .highlight p {
+      margin: 0;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    @media (max-width: 600px) {
+      .container { padding: 32px 16px 64px; }
+      header h1 { font-size: 26px; }
+      .card { padding: 24px 20px; }
+      h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Política de Privacidade</h1>
+      <div class="app-name">Honki Planner</div>
+      <div class="updated">Última atualização: 27 de abril de 2026</div>
+    </header>
+
+    <div class="toc">
+      <h2>Sumário</h2>
+      <ol>
+        <li><a href="#identificacao">Quem somos</a></li>
+        <li><a href="#dados-coletados">Dados que coletamos</a></li>
+        <li><a href="#finalidade">Por que coletamos esses dados</a></li>
+        <li><a href="#compartilhamento">Com quem compartilhamos</a></li>
+        <li><a href="#armazenamento">Onde os dados são armazenados</a></li>
+        <li><a href="#retencao">Por quanto tempo guardamos</a></li>
+        <li><a href="#direitos">Seus direitos (LGPD)</a></li>
+        <li><a href="#seguranca">Segurança</a></li>
+        <li><a href="#menores">Menores de idade</a></li>
+        <li><a href="#mudancas">Alterações nesta política</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2 id="identificacao">1. Quem somos</h2>
+      <p>
+        Esta Política de Privacidade descreve como o aplicativo
+        <strong>Honki Planner</strong> coleta, usa, armazena e protege os
+        dados pessoais dos seus usuários, em conformidade com a
+        <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD)</strong>
+        e demais legislações aplicáveis.
+      </p>
+      <p>
+        <strong>Controlador dos dados:</strong>
+      </p>
+      <ul>
+        <li>Helio Yoshiyuki</li>
+        <li>CPF: 481.146.528-88</li>
+        <li>Atuação como pessoa física, desenvolvedor independente</li>
+        <li>Para correspondência e exercício de direitos: <a href="mailto:dev@honkilabs.com">dev@honkilabs.com</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 id="dados-coletados">2. Dados que coletamos</h2>
+      <p>
+        Coletamos apenas os dados estritamente necessários ao funcionamento
+        do aplicativo. Listamos abaixo todos os dados pessoais tratados:
+      </p>
+
+      <h3>2.1. Dados fornecidos por você ao se cadastrar</h3>
+      <ul>
+        <li><strong>Endereço de e-mail</strong> (obrigatório para autenticação)</li>
+        <li><strong>Senha</strong> (criptografada, nunca armazenada em texto plano — gerenciada pelo Firebase Authentication)</li>
+        <li><strong>Nome de exibição</strong> (escolhido por você ao primeiro acesso)</li>
+        <li>Caso opte por entrar com Google: <strong>nome público da sua conta Google</strong> e <strong>foto de perfil pública</strong>, conforme autorização concedida</li>
+      </ul>
+
+      <h3>2.2. Dados criados por você dentro do aplicativo</h3>
+      <ul>
+        <li><strong>Compromissos</strong>: título, data, hora, local, observações, lembrete configurado, prioridade, recorrência</li>
+        <li><strong>Tarefas</strong>: título, data de vencimento, prioridade, observações, status (concluída ou pendente)</li>
+        <li><strong>Pessoas (contatos do app)</strong>: nome, telefone (opcional), e-mail (opcional), categoria, observações</li>
+        <li><strong>Preferências do aplicativo</strong>: modo escuro, notificações habilitadas, sons habilitados</li>
+        <li><strong>Plano de assinatura</strong>: status (gratuito ou Premium) e data de expiração, quando aplicável</li>
+      </ul>
+      <p>
+        <em>Esses dados são propriedade integral do usuário e podem ser
+        exportados ou deletados a qualquer momento, conforme descrito na
+        seção sobre seus direitos.</em>
+      </p>
+
+      <h3>2.3. Dados técnicos coletados automaticamente</h3>
+      <ul>
+        <li><strong>Token do dispositivo</strong> (necessário para enviar notificações locais ao seu próprio celular — não é compartilhado com servidores)</li>
+        <li><strong>Identificador único de instalação</strong> gerado pelo Firebase, usado para sessão e segurança</li>
+      </ul>
+
+      <h3>2.4. Dados de localização para autocompletar endereços</h3>
+      <p>
+        Quando você digita um endereço ao criar um compromisso, o aplicativo
+        consulta serviços públicos de mapas (<strong>OpenStreetMap</strong>,
+        <strong>Photon</strong>) para sugerir endereços. Apenas o texto que
+        você digitou é enviado a esses serviços. <strong>O aplicativo não
+        coleta nem armazena sua localização atual (GPS) em momento algum.</strong>
+      </p>
+
+      <div class="highlight">
+        <p>
+          O Honki Planner <strong>não coleta</strong> dados de geolocalização
+          em segundo plano, contatos do seu telefone, fotos da sua galeria,
+          nem qualquer outra informação além do que está listado acima.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 id="finalidade">3. Por que coletamos esses dados</h2>
+      <p>
+        Tratamos seus dados exclusivamente para os seguintes propósitos:
+      </p>
+      <ul>
+        <li><strong>Autenticação</strong>: identificar você ao entrar no aplicativo (e-mail e senha, ou login Google)</li>
+        <li><strong>Sincronização</strong>: manter seus compromissos, tarefas e pessoas sincronizados entre dispositivos</li>
+        <li><strong>Notificações</strong>: enviar lembretes locais no horário configurado por você (executados pelo seu próprio celular, sem servidor intermediário)</li>
+        <li><strong>Personalização</strong>: aplicar suas preferências (modo escuro, sons, etc.)</li>
+        <li><strong>Cobrança e gestão de assinatura</strong>: identificar usuários do plano gratuito e Premium, controlar limites de uso conforme o plano contratado</li>
+        <li><strong>Suporte ao usuário</strong>: responder mensagens enviadas para nosso e-mail de contato</li>
+      </ul>
+      <p>
+        <strong>Bases legais (LGPD art. 7º):</strong> a maior parte do
+        tratamento se baseia na <em>execução do contrato</em> com você
+        (art. 7º, V) e em <em>consentimento</em> dado ao criar a conta
+        (art. 7º, I).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 id="compartilhamento">4. Com quem compartilhamos</h2>
+      <p>
+        Seus dados <strong>nunca são vendidos</strong>. Compartilhamos apenas
+        com os seguintes operadores, que prestam serviços técnicos
+        essenciais ao funcionamento do aplicativo:
+      </p>
+
+      <h3>Google LLC (Firebase Authentication, Cloud Firestore)</h3>
+      <ul>
+        <li><strong>Função:</strong> autenticação de usuários, banco de dados em nuvem que armazena seus compromissos, tarefas, pessoas e preferências</li>
+        <li><strong>Localização dos servidores:</strong> EUA (regiões US-Central por padrão); pode haver replicação em outras regiões geográficas operadas pelo Google Cloud</li>
+        <li><strong>Política de privacidade do Google:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      </ul>
+
+      <h3>Komoot GmbH (Photon API) — opcional</h3>
+      <ul>
+        <li><strong>Função:</strong> sugestões de endereço ao digitar um local de compromisso</li>
+        <li><strong>Dado enviado:</strong> apenas o texto que você está digitando</li>
+        <li><strong>Política:</strong> <a href="https://www.komoot.com/privacy" target="_blank" rel="noopener">https://www.komoot.com/privacy</a></li>
+      </ul>
+
+      <h3>OpenStreetMap Foundation (Nominatim API) — opcional</h3>
+      <ul>
+        <li><strong>Função:</strong> autocomplete de endereços (fallback caso o Photon esteja indisponível) e renderização de mapas para visualizar locais de compromissos</li>
+        <li><strong>Dado enviado:</strong> apenas o texto digitado, sem identificação pessoal</li>
+        <li><strong>Política:</strong> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
+      </ul>
+
+      <p>
+        <strong>Não usamos serviços de publicidade nem rastreamento por
+        terceiros</strong> nesta versão do aplicativo. Caso isso mude no
+        futuro (por exemplo, integração com AdMob ou serviços de analytics),
+        esta política será atualizada e você será informado.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 id="armazenamento">5. Onde os dados são armazenados</h2>
+      <p>
+        Seus dados de aplicativo (compromissos, tarefas, pessoas, perfil)
+        são armazenados na infraestrutura do <strong>Google Cloud Firestore</strong>,
+        com servidores localizados nos Estados Unidos da América.
+      </p>
+      <p>
+        Conforme permitido pelo <strong>art. 33 da LGPD</strong>, esta
+        transferência internacional ocorre com base em garantias contratuais
+        oferecidas pelo Google, que adere a padrões reconhecidos
+        internacionalmente de proteção de dados.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 id="retencao">6. Por quanto tempo guardamos seus dados</h2>
+      <p>
+        Mantemos seus dados pessoais enquanto sua conta estiver ativa.
+        Quando você solicita a exclusão da sua conta:
+      </p>
+      <ul>
+        <li>Todos os seus compromissos, tarefas, pessoas e preferências são <strong>deletados permanentemente</strong> do nosso banco de dados em até <strong>30 dias</strong></li>
+        <li>Os dados de autenticação (e-mail, senha hash) são removidos do Firebase</li>
+        <li>Backups de segurança podem manter os dados por até <strong>90 dias adicionais</strong> antes de serem rotacionados</li>
+      </ul>
+      <p>
+        Caso você fique sem usar o aplicativo por mais de <strong>2 anos
+        consecutivos</strong>, podemos entrar em contato para confirmar se
+        deseja manter a conta ativa antes de qualquer ação automática.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 id="direitos">7. Seus direitos (LGPD)</h2>
+      <p>
+        Conforme o <strong>art. 18 da LGPD</strong>, você tem direito a:
+      </p>
+      <ul>
+        <li><strong>Confirmação</strong> de que tratamos seus dados</li>
+        <li><strong>Acesso</strong> aos dados que temos sobre você</li>
+        <li><strong>Correção</strong> de dados incompletos, incorretos ou desatualizados</li>
+        <li><strong>Anonimização, bloqueio ou eliminação</strong> de dados desnecessários ou tratados em desconformidade com a LGPD</li>
+        <li><strong>Portabilidade</strong> dos seus dados para outro fornecedor de serviço</li>
+        <li><strong>Eliminação</strong> dos dados pessoais tratados com seu consentimento</li>
+        <li><strong>Informação</strong> sobre as entidades públicas e privadas com as quais compartilhamos seus dados</li>
+        <li><strong>Informação</strong> sobre a possibilidade de não fornecer consentimento e sobre as consequências dessa recusa</li>
+        <li><strong>Revogação do consentimento</strong> a qualquer momento</li>
+      </ul>
+      <p>
+        Para exercer qualquer um desses direitos, escreva para
+        <a href="mailto:dev@honkilabs.com">dev@honkilabs.com</a>.
+        Responderemos em até <strong>15 dias corridos</strong>.
+      </p>
+      <div class="highlight">
+        <p>
+          <strong>Você também pode deletar sua conta diretamente pelo aplicativo</strong>,
+          em "Perfil → Conta → Excluir minha conta", quando essa opção
+          estiver disponível em versões futuras. Por enquanto, basta nos
+          enviar um e-mail solicitando a exclusão.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 id="seguranca">8. Segurança</h2>
+      <p>
+        Adotamos medidas técnicas e organizacionais para proteger seus
+        dados contra acessos não autorizados, alterações indevidas ou
+        destruição:
+      </p>
+      <ul>
+        <li>Comunicação criptografada via <strong>HTTPS/TLS</strong> em todas as transmissões</li>
+        <li>Senhas armazenadas com <strong>hash criptográfico</strong> pelo Firebase Authentication</li>
+        <li><strong>Regras de segurança no banco de dados</strong> (Security Rules) que garantem que cada usuário só acesse seus próprios dados</li>
+        <li>Verificação em duas etapas disponível via Google quando você usa o login com Google</li>
+      </ul>
+      <p>
+        Apesar das medidas, nenhum sistema é 100% seguro. Em caso de
+        incidente que afete seus dados pessoais, comprometeremos-nos a
+        comunicar você e a Autoridade Nacional de Proteção de Dados (ANPD)
+        nos termos do <strong>art. 48 da LGPD</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 id="menores">9. Menores de idade</h2>
+      <p>
+        O Honki Planner não é direcionado a menores de 13 anos. Não
+        coletamos intencionalmente dados de crianças. Caso identifiquemos
+        que uma conta foi criada por um menor de idade sem o consentimento
+        dos responsáveis, ela será excluída.
+      </p>
+      <p>
+        Se você é responsável por um menor que utiliza o aplicativo e
+        deseja remover os dados dele, escreva para
+        <a href="mailto:dev@honkilabs.com">dev@honkilabs.com</a>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 id="mudancas">10. Alterações nesta política</h2>
+      <p>
+        Esta política pode ser atualizada periodicamente para refletir
+        mudanças nos serviços do aplicativo, na legislação aplicável ou em
+        boas práticas do setor.
+      </p>
+      <p>
+        Quando uma atualização for substancial (por exemplo, novos tipos
+        de dados coletados ou novos compartilhamentos com terceiros),
+        avisaremos você dentro do próprio aplicativo antes que a alteração
+        entre em vigor. A versão mais recente sempre estará disponível
+        nesta mesma URL, com a data da última atualização atualizada.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 id="contato">11. Contato</h2>
+      <p>
+        Para qualquer dúvida, sugestão ou solicitação relacionada a esta
+        Política de Privacidade ou ao tratamento dos seus dados pessoais:
+      </p>
+      <p>
+        <strong>E-mail:</strong>
+        <a href="mailto:dev@honkilabs.com">dev@honkilabs.com</a>
+      </p>
+      <p>
+        <strong>Encarregado de Proteção de Dados (DPO):</strong>
+        Helio Yoshiyuki — contato pelo mesmo e-mail acima.
+      </p>
+    </div>
+
+    <footer>
+      © 2026 Honki Planner. Todos os direitos reservados.
+    </footer>
+  </div>
+</body>
+</html>
